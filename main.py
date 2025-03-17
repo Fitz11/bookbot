@@ -1,7 +1,11 @@
 from stats import get_num_characters, get_num_words
 
 def main():
-    get_num_words('books/frankenstein.txt')
-    get_num_characters('books/frankenstein.txt')
+    print("============ BOOKBOT ============")
+    filepath = 'books/frankenstein.txt'
+    print(f"Analyzing book found at {filepath}...")
+    get_num_words(filepath)
+    get_num_characters(filepath)
+    print("============= END ===============")
 
 main()
